@@ -63,7 +63,7 @@ public class array
         }
 
 
-        for(int j[]:num)//enhanced for loop for two diomonsional array
+        for(int j[]:num)//enhanced for loop for two diomonsional array 
         {
           for(int l:j)
           {
