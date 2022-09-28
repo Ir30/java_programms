@@ -1,7 +1,9 @@
 class Emp{
    int salary;
    int id;
-   static String ceo;//static keyword is used to make an object into class specific
+   static String ceo;//static keyword is used to make an object into class specific.and allocate memmory for 
+                     //static variable when the class is called and cit is in loader memmory(class loader memmory)
+                     //rather than the heap memmory(heap memmory for object specific variables)
    static String c_name;
    
    static{
