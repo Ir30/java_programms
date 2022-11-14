@@ -39,8 +39,7 @@ public class printNumbers {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number: ");
         int num = sc.nextInt();
-
-        printNumbers.printing_numbers(num);
+        printing_numbers(num);
 }
 }
     
