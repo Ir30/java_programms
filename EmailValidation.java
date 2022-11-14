@@ -1,5 +1,19 @@
 
 public class EmailValidation {
+
+    static boolean check(String s) {
+        if (s == null) {
+           return false;
+        }
+        int len = s.length();
+        for (int i = 0; i < len; i++) {
+           if ((Character.isLetterOrDigit(s.charAt(i)) == false)) {
+              return false;
+           }
+        }
+        return true;
+    }
+
     static boolean validate(String s){
 
             String[] part1;
@@ -24,10 +38,10 @@ public class EmailValidation {
             return false;
         }
         boolean val=true;
-        if(userNmae.equals("")){
+        if(userNmae.equals("") || check(userNmae)==false){
             return false;
         }
-        if(siteName.equals("")){
+        if(siteName.equals("") || check(userNmae)==false){
             return false;
         }
         if(ext.length()>3){
@@ -42,6 +56,12 @@ public class EmailValidation {
         System.out.println(validate("irdgmail.comhj"));
         System.out.println(validate("ird@.comhj"));
         System.out.println(validate("@gmail.comhj"));
+        System.out.println(validate("ird*@gmail.com"));
+        System.out.println(validate("ird123@gmail.com"));
+        System.out.println(validate("ird@gmail#.com"));
+
+
+
 
     }
 }
